@@ -20,20 +20,7 @@ const HEROES: Hero[] = [
 
 @Component({
   selector: 'my-app',
-  template: `
-    <h1>{{title}}</h1>
-    <h2>My Heroes</h2>
-    <ul class='heroes'>
-      <li *ngFor='let hero of heroes'>{{hero.name}}</li>
-    </ul>
-    <div>
-      <label>ID:</label> {{hero.id}}
-    </div>
-    <div>
-      <label>Name:</label>
-      <input [(ngModel)]="hero.name" placeholder="name">
-    </div>
-  `
+  templateUrl: './app.component.pug'
 })
 
 export class AppComponent {

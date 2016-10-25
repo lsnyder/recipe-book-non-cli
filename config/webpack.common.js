@@ -37,6 +37,10 @@ module.exports = {
         test: /\.css$/,
         include: helpers.root('src', 'app'),
         loader: 'raw'
+      },
+      {
+        test: /\.(pug|jade)$/,
+        loader: 'pug-html-loader'
       }
     ]
   },
