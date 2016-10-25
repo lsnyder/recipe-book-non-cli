@@ -1,0 +1,12 @@
+h1 {{title}}
+h2 My Heroes
+
+ul(class='heroes')
+  li(*ngFor='let hero of heroes') {{hero.name}}
+
+div
+  label ID: {{hero.id}}
+
+div
+  label Name:
+  input([(ngModel)]='hero.name' placeholder='name')
