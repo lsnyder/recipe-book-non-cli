@@ -20,7 +20,8 @@ const HEROES: Hero[] = [
 
 @Component({
   selector: 'my-app',
-  templateUrl: './app.component.pug'
+  templateUrl: './app.component.pug',
+  styleUrls: ['./app.component.styl']
 })
 
 export class AppComponent {
