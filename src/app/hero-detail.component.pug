@@ -1,0 +1,7 @@
+div(*ngIf="hero")
+  div
+    label ID: {{hero.id}}
+
+  div
+    label Name:
+    input([(ngModel)]='hero.name' placeholder='name')

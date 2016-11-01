@@ -6,10 +6,4 @@ ul(class='heroes')
     span(class='badge') {{hero.id}}
     span {{hero.name}}
 
-div(*ngIf="selectedHero")
-  div
-    label ID: {{selectedHero.id}}
-
-  div
-    label Name:
-    input([(ngModel)]='selectedHero.name' placeholder='name')
+my-hero-detail([hero]='selectedHero')
